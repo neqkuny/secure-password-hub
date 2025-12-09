@@ -1,11 +1,11 @@
-import { Binary, BookText, Fish, Key, Repeat, Shuffle, Users } from "lucide-react";
+import { Binary, BookText, Fish, Repeat, Shuffle, Users } from "lucide-react";
 
 const methods = [
   {
     icon: Repeat,
     name: "Brute Force Attack",
     description: "Systematically tries every possible combination until the correct password is found.",
-    prevention: "Use long passwords (16+ characters) to make this computationally infeasible.",
+    prevention: "Use long passwords with mixed character types to make this computationally infeasible.",
     severity: "high",
   },
   {
@@ -28,13 +28,6 @@ const methods = [
     description: "Uses leaked username/password pairs from other breaches to try on different sites.",
     prevention: "Never reuse passwords across different accounts.",
     severity: "high",
-  },
-  {
-    icon: Key,
-    name: "Rainbow Table Attack",
-    description: "Uses precomputed tables of password hashes to reverse-engineer passwords.",
-    prevention: "Services should use salted hashes. Users should use unique, complex passwords.",
-    severity: "medium",
   },
   {
     icon: Shuffle,

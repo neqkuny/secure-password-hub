@@ -11,9 +11,8 @@ const badPasswords = [
 ];
 
 const goodPasswords = [
-  { password: "Tr0ub4dor&3Horse", reason: "Mixed case, numbers, symbols, 16+ chars" },
+  { password: "Tr0ub4dor&3Horse", reason: "Mixed case, numbers, symbols" },
   { password: "correct-horse-battery-staple", reason: "Passphrase: easy to remember, hard to crack" },
-  { password: "7$mK9#pL2@nX4vQ!", reason: "Random mix, 16 characters, high entropy" },
   { password: "MyDog$Ate3Pizzas!!", reason: "Memorable sentence with complexity" },
   { password: "xK9!mN2$pL7@vQ3#", reason: "Generated random, maximum entropy" },
   { password: "Purple-Elephant-Dances-42!", reason: "Random words + number + symbol" },

@@ -1,11 +1,11 @@
-import { CheckCircle2, KeyRound, RefreshCw, Shield, Smartphone, TriangleAlert } from "lucide-react";
+import { KeyRound, RefreshCw, Shield, Smartphone, TriangleAlert } from "lucide-react";
 
 const tips = [
   {
     icon: KeyRound,
     title: "Use a Password Manager",
     description:
-      "Let a password manager generate and store unique, complex passwords for every account. Popular options include 1Password, Bitwarden, and Dashlane.",
+      "Let a password manager generate and store unique, complex passwords for every account.",
     priority: "essential",
   },
   {
@@ -26,7 +26,7 @@ const tips = [
     icon: Shield,
     title: "Make Passwords Long",
     description:
-      "Length matters more than complexity. A 16-character password is exponentially harder to crack than an 8-character one.",
+      "Length matters more than complexity. Use at least 6+ characters for adequate security.",
     priority: "recommended",
   },
   {
@@ -35,13 +35,6 @@ const tips = [
     description:
       "Always verify URLs before entering credentials. Look for HTTPS and check for subtle misspellings in domain names.",
     priority: "essential",
-  },
-  {
-    icon: CheckCircle2,
-    title: "Check for Breaches",
-    description:
-      "Regularly check if your email or passwords have been exposed in data breaches using services like HaveIBeenPwned.",
-    priority: "recommended",
   },
 ];
 
@@ -93,31 +86,6 @@ export const SecurityTips = () => {
             </div>
           );
         })}
-      </div>
-
-      <div className="p-6 bg-card border border-border rounded-xl">
-        <h4 className="font-semibold text-foreground mb-4">Quick Security Checklist</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {[
-            "Using a password manager",
-            "2FA enabled on important accounts",
-            "No password reuse",
-            "Passwords are 16+ characters",
-            "Checked for data breaches",
-            "Avoiding phishing links",
-          ].map((item, index) => (
-            <label
-              key={index}
-              className="flex items-center gap-3 p-3 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors cursor-pointer"
-            >
-              <input
-                type="checkbox"
-                className="w-5 h-5 rounded border-border bg-secondary accent-primary"
-              />
-              <span className="text-sm text-foreground">{item}</span>
-            </label>
-          ))}
-        </div>
       </div>
     </div>
   );
