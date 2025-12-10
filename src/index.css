@@ -30,8 +30,8 @@
     --destructive: 0 72% 55%;
     --destructive-foreground: 210 40% 98%;
 
-    --success: 0 0% 95%;
-    --success-foreground: 0 0% 10%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
 
     --warning: 38 92% 55%;
     --warning-foreground: 222 47% 6%;
@@ -43,12 +43,12 @@
     --radius: 0.75rem;
 
     --glow-primary: 0 0 60px hsl(0 84% 60% / 0.3);
-    --glow-success: 0 0 40px hsl(0 0% 95% / 0.4);
+    --glow-success: 0 0 40px hsl(142 76% 36% / 0.4);
     --glow-warning: 0 0 40px hsl(38 92% 55% / 0.4);
     --glow-destructive: 0 0 40px hsl(0 72% 55% / 0.4);
 
     --gradient-primary: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 70% 50%));
-    --gradient-success: linear-gradient(135deg, hsl(0 0% 95%), hsl(0 0% 85%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 70% 30%));
     --gradient-warning: linear-gradient(135deg, hsl(38 92% 55%), hsl(28 85% 50%));
     --gradient-destructive: linear-gradient(135deg, hsl(0 72% 55%), hsl(350 70% 50%));
     --gradient-dark: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
