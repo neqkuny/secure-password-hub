@@ -6,7 +6,7 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: './',
+  base: mode === 'production' ? '/secure-password-hub/' : '/',
   server: {
     host: "::",
     port: 8080,
