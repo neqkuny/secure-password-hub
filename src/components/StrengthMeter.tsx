@@ -8,30 +8,26 @@ interface StrengthMeterProps {
 
 export const StrengthMeter = ({ strength, label }: StrengthMeterProps) => {
   const getStrengthColor = () => {
-    if (strength < 25) return "bg-destructive";
-    if (strength < 50) return "bg-warning";
-    if (strength < 75) return "bg-primary";
+    if (strength < 40) return "bg-destructive";
+    if (strength < 70) return "bg-warning";
     return "bg-success";
   };
 
   const getGlowClass = () => {
-    if (strength < 25) return "glow-destructive";
-    if (strength < 50) return "glow-warning";
-    if (strength < 75) return "glow-primary";
+    if (strength < 40) return "glow-destructive";
+    if (strength < 70) return "glow-warning";
     return "glow-success";
   };
 
   const getIcon = () => {
-    if (strength < 25) return <ShieldX className="w-6 h-6 text-destructive" />;
-    if (strength < 50) return <ShieldAlert className="w-6 h-6 text-warning" />;
-    if (strength < 75) return <Shield className="w-6 h-6 text-primary" />;
+    if (strength < 40) return <ShieldX className="w-6 h-6 text-destructive" />;
+    if (strength < 70) return <ShieldAlert className="w-6 h-6 text-warning" />;
     return <ShieldCheck className="w-6 h-6 text-success" />;
   };
 
   const getTextColor = () => {
-    if (strength < 25) return "text-destructive";
-    if (strength < 50) return "text-warning";
-    if (strength < 75) return "text-primary";
+    if (strength < 40) return "text-destructive";
+    if (strength < 70) return "text-warning";
     return "text-success";
   };
 
